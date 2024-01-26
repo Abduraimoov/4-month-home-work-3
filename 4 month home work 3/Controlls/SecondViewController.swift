@@ -12,7 +12,6 @@ class SecondViewController: UIViewController, UITableViewDataSource {
     var Contacts: [Contact] = []
     private let cellID = "cell"
 
-
     private lazy var myContactsLbl: UILabel = MakerView().makeLbl(text: "My contacts",
                                                                   textColor: .black,
                                                                   textSize: 20,
@@ -23,12 +22,9 @@ class SecondViewController: UIViewController, UITableViewDataSource {
           tableView.translatesAutoresizingMaskIntoConstraints = false
           return tableView
        }()
-
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
         setupUI()
     }
     
@@ -40,7 +36,6 @@ class SecondViewController: UIViewController, UITableViewDataSource {
         setupData()
     }
   
-    
     private func setupmyContactsLbl() {
         view.addSubview(myContactsLbl)
         
@@ -104,6 +99,5 @@ class SecondViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
-
 
 }
